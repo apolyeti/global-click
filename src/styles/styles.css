@@ -1,0 +1,18 @@
+#counter {
+    height: 50vh;
+    width: 50vh;
+    font-size: 10rem;
+    background-color: #8A7F72;
+    color: #575048;
+    border-radius: 40px;
+}
+
+#counter:hover {
+    background-color: #837a6f;
+    color: #675f55;
+}
+
+#counter:active {
+    background-color: #5d574e;
+    color: #8A7F72;
+}
