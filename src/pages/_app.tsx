@@ -5,6 +5,7 @@ import Head from 'next/head'
 import { META } from 'config'
 import '@styles/styles.css'
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>

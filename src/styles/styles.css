@@ -1,9 +1,9 @@
 #counter {
-    height: 50vh;
-    width: 50vh;
-    font-size: 10rem;
-    background-color: #8A7F72;
-    color: #575048;
+    height: 40vh;
+    width: 40vh;
+    font-size: 5rem;
+    background-color: transparent;
+    color: #8A7F72;
     border-radius: 40px;
 }
 
