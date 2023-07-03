@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev\" \"ts-node server/index.ts\"",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "ts-node --project tsconfig.server.json server/index.ts",
+    "dev:server": "concurrently \"ts-node-dev --project tsconfig.server.json server/index.ts\" \"next dev\""
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
@@ -24,8 +26,7 @@
     "react-dom": "18.2.0",
     "socket.io": "^4.7.1",
     "socket.io-client": "^4.7.1",
-    "sqlite3": "^5.1.6",
-    "ts-node": "^10.9.1"
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "@types/node": "18.0.3",
@@ -34,6 +35,9 @@
     "concurrently": "^8.2.0",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.1",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^4.7.4"
   }
 }
