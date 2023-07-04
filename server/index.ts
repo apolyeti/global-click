@@ -1,12 +1,15 @@
 import express from 'express';
 import http from 'http';
 import { Server, Socket } from 'socket.io';
+import dotenv from 'dotenv';
+
+dotenv.config();
+const PORT = Number(process.env.PORT) || 3000;
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+const io : Server = new Server(server);
 let globalNumber: number = 0;
-
 
 
 io.on('connection', (socket: Socket) => {
@@ -22,7 +25,6 @@ io.on('connection', (socket: Socket) => {
 });
 
 
-const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {
     console.log(`listening on *:${PORT}`);
 });
