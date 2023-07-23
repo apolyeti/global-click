@@ -1,15 +1,18 @@
 #counter {
-    height: 40vh;
-    width: 40vh;
+    height: 20vh;
+    width: 30vh;
     font-size: 5rem;
     background-color: transparent;
     color: #8A7F72;
     border-radius: 40px;
+    transition: 500ms;
 }
 
 #counter:hover {
     background-color: #837a6f;
     color: #675f55;
+    margin-bottom: 10px;
+    transition: 500ms;
 }
 
 #counter:active {

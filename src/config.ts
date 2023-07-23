@@ -1,6 +1,6 @@
 const META = {
-    title: "App name",
-    description: "App description",
+    title: "global click",
+    description: "click from all over the world",
     lang: "en",
     url: "https://example.com",
     image: "/logo.png",

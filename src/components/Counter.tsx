@@ -26,6 +26,7 @@ export default function Counter( {socket}: CounterProps) {
     }
 
 
+
     return (
         <AbsoluteCenter>
             <Button 
