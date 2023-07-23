@@ -1,6 +1,6 @@
 import { Server } from "socket.io";
 
-const SocketHandler = (req, res) => {
+const SocketHandler = (_req, res) => {
     if (res.socket.server.io) {
         console.log("already has io instance");
         return res.end();
