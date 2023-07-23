@@ -1,10 +1,10 @@
 import { Server } from "socket.io";
 
-const SocketHandler = (req, res) => {
+const SocketHandler = (_req, res) => {
     if (res.socket.server.io) {
         console.log("already has io instance");
         return res.end();
-    } else if (req.headers.upgrade && req.headers.upgrade.toLowerCase() === 'websocket') {
+    } else {
         console.log('First use, starting socket.io');
         const io =  new Server(res.socket.server);
         res.socket.server.io = io;
@@ -23,7 +23,6 @@ const SocketHandler = (req, res) => {
                 console.log("user disconnected");
             });
         });
-        
         res.socket.server.io = io;
     }
 
