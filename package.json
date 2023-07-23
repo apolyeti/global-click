@@ -10,9 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "server": "ts-node --project tsconfig.server.json server/index.ts",
-    "dev:server": "concurrently \"ts-node-dev --project tsconfig.server.json server/index.ts\" \"next dev\""
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
