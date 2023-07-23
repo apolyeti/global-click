@@ -49,5 +49,5 @@
     "src/pages/_document.tsx",
     "src/pages/_error.js",
     "src/lib/gtag.ts"
-, "server/index.ts"  ]
+]
 }
